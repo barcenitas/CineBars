@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $("span").css({"display": "inline", "color": "red"}).fadeOut(2000);
+    });
+});
+</script>
+<style>
+span {    display: none; }
+</style>
+</head>
+<body>
+
+<input>
+
+<span>No olvides rellenar todos los campos</span>
+<p>Hacer click en la casilla de datos</p>
+
+</body>
+</html>

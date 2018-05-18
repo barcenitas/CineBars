@@ -1,18 +1,121 @@
-body{
-
-background-color: #fff;
-
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
 }
 
-.icons{
-	align-items: center;
-	 width:20%;  
-}
 
 
 img{
-   width:100%;                                                                                                                                                                                                              
+
+
+    width: 100%;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+
 }
+
+td, th { 
+  padding: 0px; 
+  border: 0px solid #ccc; 
+  text-align: center; 
+}
+
+
+
+
+body{
+
+	background-color: black;
+
+}
+
+body.logbo{
+
+ background-color:black;
+}
+
+
+.logins{
+    height: 60px;
+    border: none;
+}
+
+
+tr.log{
+
+}
+
+.fondo{
+
+    height: 640px;
+}
+
+.fondob{
+
+    height: 280px;
+}
+
+.todo{
+	float:right;
+margin:-5px -4px 0px -5px;
+}
+
+.todo2{
+
+	
+margin:0px 10px 0px 10px;
+}
+
+p{
+	color:#FFC300;
+}
+
+
+
+/*INICIAN EFECTOS DEGRADADO PANTALLA*/
+
+
+/*FIN DEGRADADO PANTALLA*/
+
+
+
+#fondoTransparente
+{
+	/*Div que ocupa toda la pantalla*/
+	position:absolute;
+	 z-index:0;
+
+	top:0px;
+	left:0px;
+	width:100%;
+	height:128%;
+	background-color:#000;
+
+	filter: alpha(opacity=50);
+	/*FireFox Opera*/
+
+	opacity: .5;
+      width: 100%;
+    overflow-y: auto;
+    _overflow: auto;
+    margin: 0 0 1em;
+
+}
+
+
+
+
+.icons{
+	align-items: center;
+	 width:15%;  
+}
+
+.icons2{
+	align-items: center;
+	 width:10%;  
+}
+
 
 
 .nav{
@@ -20,10 +123,298 @@ img{
   z-index: 100;
 }
 
+p{
+color:#fffS;
+
+}
 
 
 
-/*style="background-image:url(img/c.jpg);
+/*style="background-image:url(img: ;/c.jpg);
 background-attachment: fixed;
  background-position: top center; 
  background-repeat: no-repeat;"*/
+
+
+ /*INICIO LOGIN*/
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.9;
+ 
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: 180px;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+
+    text-align: center;
+    margin: 20px 0px 0px 0px ;
+    position: relative;
+}
+
+img.avatar {
+    width: 130px;
+    border-radius: 0%;
+}
+
+
+img.avatar2 {
+    width: 330px;
+    border-radius: 0%;
+}
+
+img.avatar2 {
+    width: 20%;
+    border-radius: 0%;
+}
+
+.container {
+    padding: 20px;
+
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 60%; 
+    padding-top: 10px;
+       background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+
+	.lightbox {
+display: none;
+position: fixed;
+z-index: 999;
+width: 100%;
+height: 100%;
+text-align: center;
+top: 0;
+left: 0;
+        
+
+}
+
+
+
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+
+
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+
+ /*FIN LOGIN*/
+
+
+
+ /*INICIO DESPLEGABLE*/
+
+		
+			
+			* {
+				margin:0px;
+				padding:0px;
+
+			}
+			
+			#header {
+				margin:auto;
+				width:20px;
+				font-family:Arial, Helvetica, sans-serif;
+				position: absolute;
+				top:2px;
+
+
+			}
+			
+			ul, ol {
+				list-style:none;
+
+			}
+			
+			.nav > li {
+				float:right;
+
+			}
+			
+			.nav li img {
+				width: 60px;
+								display:block;
+
+			}
+			
+			.nav li a:hover {
+
+				
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:10px;
+
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+
+			}
+			
+			.nav li ul li {
+				position:relative;
+
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+
+			}
+			
+	
+ /*FIN DESPLEGABLE*/
+
+
+
+
+/*INICIO CARTELERA*/
+
+/*FIN CARTELERA*/
+
+
+/*ESTRELLAS*/
+.star-rating {
+  $size: 20px;
+  $normal: #95A5A6;
+  $selected: #F39C12;
+  
+  display: inline-block;
+  
+  a {
+    float: right;
+    width: $size;
+    height: $size;
+    line-height: $size;
+    font-size: $size;
+    color: $normal;
+    text-decoration: none;
+    text-align: center;
+    transition: color .3s;
+    
+    &:hover {
+      color: $selected;
+      
+      & ~ a {
+        color: $selected;
+      }
+    }
+  }
+
+}
+/*FIN ESTRELLAS*/
+
+
+font{
+	font-family: 'Ubuntu', sans-serif;
+}
+p.g{
+	font-family: 'Quicksand', sans-serif;
+color: #B6B1A3;
+r;
+}
+
+

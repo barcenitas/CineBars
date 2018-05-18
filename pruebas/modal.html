@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="fade" class="overlay"></div>
+  <div id="light" class="modal">
+     <p>Lorem ipsum dolor sit.....</p>
+  </div>
+
+
+
+<p>Texto del sitio web. Con un <a href="">link</a> abriremos la ventana.</p>
+
+
+<style>
+	
+
+
+
+	.overlay{
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: #000;
+     z-index:1001;
+     opacity:.75;
+     -moz-opacity: 0.75;
+     filter: alpha(opacity=75);
+}
+
+
+
+.modal {
+     display: none;
+     position: absolute;
+     top: 25%;
+     left: 25%;
+     width: 50%;
+     height: 50%;
+     padding: 16px;
+     background: #fff;
+     color: #333;
+     z-index:1002;
+     overflow: auto;
+}
+
+
+</style>
+
+
+<script>
+	
+	document.getElementById('light').style.display='block';
+document.getElementById('fade').style.display='block';
+
+
+$('light').setStyle('display', 'block');
+$('fade').setStyle('display', 'block');
+</script>
+
+
+	
+</body>
+</html>

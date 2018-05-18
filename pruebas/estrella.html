@@ -1,0 +1,153 @@
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.11.1.js" type="text/javascript"></script>
+ 
+    <script>
+    $(document).ready(function(){
+		// Capturamos el click encima de una estrella
+		$("#stars li").click(function(){
+			if($(this).is("li:first") && $(this).hasClass("selected") && !$(this).nextAll("li").hasClass("selected"))
+			{
+				// Si es la primera estrella la selecciona, y dicha estrella
+				// esta marcada y es la unica marcada, quitamos la clase
+				$(this).removeClass("selected");
+ 
+				// añadimos al valor al formulario
+				$("input[name=stars]").val(0);
+			}else{
+				// añadimos la clase "selected"
+				$(this).addClass("selected");
+ 
+				// añadimos la clase "selected" a todas las estrellas anteriores
+				$(this).prevAll("li").addClass("selected");
+ 
+				// eliminamos la clase "selected" a todas las estrellas siguientes
+				$(this).nextAll("li").removeClass("selected");
+ 
+				// añadimos al valor al formulario
+				$("input[name=stars]").val($( "li" ).index($(this))+1);
+			}
+		});
+	});
+    </script>
+ 
+	<style>
+	ul {
+		list-style-type: none;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+	}
+	ul li{
+		background:url('stars.png') no-repeat 0px 0px transparent;
+		width:16px;
+		height:16px;
+		float:left;
+	}
+	ul li.selected{ /* esta clase añade la imagen seleccionada */
+		background:url('stars.png') no-repeat -16px 0px transparent;
+	}
+	</style>
+</head>
+ 
+<body>
+ 
+<?php
+if(isset($_POST["stars"]))
+{
+	# Mostramos la valoración que se ha enviado mediante el formulario
+	echo "<p>La valoración a sido de: ".$_POST["stars"]."</p>";
+}
+?>
+<form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
+	<input type="hidden" name="stars" value="0">
+	<ul id="stars">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<p><input type="submit" value="Enviar valoración"></p>
+</form>
+ 
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<body onLoad="habilitarPagina();" style="margin:0px;">
+<script>
+function habilitarPagina() {
+	document.getElementById('capa_cargando').style.visibility = 'hidden';
+	document.getElementById('capa_principal').style.opacity = 1;
+}
+</script>
+<style>
+	.clase_principal {opacity:0.5;}
+	.clase_cargando {
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+	}
+</style>
+
+
+<div id="capa_principal" class="clase_principal">
+	<!-- toda la página principal empieza aqui -->
+	<iframe style="border:0px; width:100%; height:100%;" src="http://www.forosdelweb.com"></iframe>
+	<!-- aquí termina toda la página principal -->
+</div>
+
+
+<div id="capa_cargando" class="clase_cargando">
+	<div style="position:absolute; top:250px; left:350px; width:200px; height:20px; border:1px solid #FF6666;background-color:#000000;color:#FFFFFF; text-align:center;">
+		<b>cargando...</b>
+	</div>
+</div>
+</body>
+</html> 
